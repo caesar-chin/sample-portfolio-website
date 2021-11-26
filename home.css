@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  transition: background-color 1s;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.typewrite {
+  position: relative;
+  color: white;
+  font-size: 7.5vh;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.home-container {
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  border: 2px solid #ccc;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.down-button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  text-align:center;
+  top: 72vh;
+}
+
+.container{
+  margin: auto;
+  width: 100%;
+}
+
+.down-button {
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+  animation-delay: 1.25s;
+  padding-top: 10px;
+  border: 20px;
+}
+
+.social-icons{
+  position: absolute !important;
+  width: 100%;
+  top: 61vh;
+}
+
+.social-media-list{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  display:inline-flex;
+  justify-content:center;
+}
+
+ul.social-media-list {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+ul.social-media-list li {
+  display: inline-block;
+  text-align: center;
+
+}
+
+ul.social-media-list svg{
+  padding-right: 2vh;
+  padding-left: 2vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+.bounce {
+  -moz-animation: bounce 5s infinite;
+  -webkit-animation: bounce 5s infinite;
+  animation: bounce 8s infinite;
+}
+
+@keyframes bounce {
+  80%,
+  84%,
+  90%,
+  96%,
+  100% {
+    transform: translateY(0);
+  }
+  88% {
+    transform: translateY(-30px);
+  }
+  92% {
+    transform: translateY(-15px);
+  }
+}
